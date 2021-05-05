@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css" >
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/styleC.css">
+    <title>Contactenos ahora</title>
+</head>
+
+
+
+<body>
+    <style>
+        body{
+    background-image: url(../img/contacto.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: monospace;
+
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    background:rgba(225, 236, 236, 0.233);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: none;
+}
+
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+
+}
+
+#boton{
+    background: rgb(212, 121, 16);
+    color: #fff;
+    padding: 20px;
+    font-family: Verdana;
+
+}
+
+#boton:hover{
+    cursor: pointer;
+    background-color: rgb(221, 158, 76);
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+    </style>
+
+<div class="header-content fuente">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container">
+            <a href="../index.html"><img class="icono btn" src="../img/logo-escapate-1.png" width="250" height="150" ></div></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-lin" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-lin" href="#">Galeria</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-lin" href="../fonts/contacto.html">Contactanos</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+  <form action="" name="Formulario" method="get">
+    
+    <h2>Contactenos</h2>
+
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="correo" placeholder="Correo" required>
+        <input type="text" name="telefono" placeholder="Telefono" required>
+        <textarea name="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+        <input type="button" value="ENVIAR" id="boton">
+
+    </form>
+</body>
+</html>
